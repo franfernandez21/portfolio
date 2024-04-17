@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background-image: url(/images/fondo-abstracto.png);
+    background-image: url(images/fondo-abstracto.jpg);
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -197,7 +197,7 @@ h4 {
     margin-top: 20px;
     margin-left: 20px;
     font-family: 'Monserrat';
-    background: linear-gradient(50deg, rgba(0, 24, 48, 90)4%, rgba(96 101 137 / 73%)), url(/images/pexels-IT.jpg);
+    background: linear-gradient(50deg, rgba(0, 24, 48, 90)4%, rgba(96 101 137 / 73%)), url(images/pexels-IT.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
