@@ -1,0 +1,357 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 20px;
+    margin: 0;
+}
+
+body {
+    background-image: url(/images/fondo-abstracto.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    background-position: right;
+    justify-content: center;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+header,
+section {
+    margin-right: 30%;
+    margin-left: 30%;
+    color: whitesmoke;
+    font-family: "Monserrat";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 5px 5px 5px;
+    padding-top: 5px;
+}
+
+.menu {
+    background-color: #18606073;
+    padding: 5px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0px 5px 0px 5px;
+}
+
+.menu a:hover {
+    cursor: pointer;
+    color: rgb(5, 24, 41);
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+}
+
+.encabezado img {
+    border-radius: 50px;
+}
+
+.encabezado h1 {
+    display: flex;
+    align-items: center;
+}
+
+.encabezado h1 img {
+    margin-right: 5px;
+}
+
+.alineacionSecciones {
+    display: flex;
+    align-items: center;
+}
+
+.infosobremi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CV {
+    padding-top: 1em;
+}
+
+.CV button {
+    padding: 1em;
+    border-radius: 20px;
+    background-color: #2b3360;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.CV button:hover {
+    box-shadow: 2px 3px 11px -3px rgba(255, 255, 255, 1);
+}
+
+.infoproyect {
+    width: 99%;
+}
+
+.infoproyect h5,
+h4 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.infoproyect img:hover {
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content a {
+    background-color: #2b3360;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    margin: 3px 0px 3px 6px;
+    padding-left: 5px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.content a:hover {
+    box-shadow: 2px 3px 11px -3px rgba(255, 255, 255, 1);
+}
+
+.content a p {
+    display: flex;
+    margin: 0px 4px 0px 0px;
+    padding-left: 2px;
+    align-items: center;
+}
+
+.content a p img {
+    margin-left: 5px;
+}
+
+.menuimg {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.menuimg img:hover {
+    width: 240px;
+    height: 240px;
+}
+
+.contentContact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentContact h6 {
+    background-color: #26306896;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 8px;
+}
+
+.iconos-email a {
+    background-color: #26306896;
+    padding: 14px 4px 0px 6px;
+    border-radius: 13px;
+}
+
+.iconos-email a:hover {
+    box-shadow: 2px 3px 11px -3px rgba(255, 255, 255, 1);
+}
+
+.cuadro-send-mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: 'Monserrat';
+    background: linear-gradient(50deg, rgba(0, 24, 48, 90)4%, rgba(96 101 137 / 73%)), url(/images/pexels-IT.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.form input {
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+
+}
+
+.form textarea {
+    height: 100px;
+    background: none;
+    color: #fff;
+    padding: 1.5em;
+    border: 1px solid #fff;
+    border-radius: 8px;
+}
+
+.btn-submit {
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    background-color: #2b3360;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    box-shadow: 2px 3px 11px -3px rgba(255, 255, 255, 1);
+}
+
+:focus {
+    outline: 1px solid #fff;
+    border-radius: 6px;
+}
+
+::placeholder {
+    color: #aac9e5;
+}
+
+footer {
+    position: static;
+    background: #0c1116;
+    margin-top: 10%;
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+}
+.foot{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 570px) {
+    .toggle-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 1190px) {
+
+    header,
+    section {
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 955px) {
+
+    header,
+    section {
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 690px) {
+
+    header,
+    section {
+        margin-right: 9%;
+        margin-left: 9%;
+    }
+
+}
+
+@media screen and (max-width: 570px) {
+
+    header,
+    section {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: absolute;
+        margin-top: 5px;
+        top: 0;
+        left: 0;
+        height: 95vh;
+        width: 70vw;
+        z-index: 1;
+        background-color: #0c2a2afc;
+        transform: translateX(-110%);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .cabecera {
+        justify-content: flex-end;
+    }
+
+    .close {
+        display: none;
+    }
+
+    .show_menu {
+        transform: translateX(0px);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .contentContact {
+        flex-direction: column;
+    }
+
+    .iconos-email {
+        margin-top: 3px;
+    }
+    .foot{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+    }
+}
