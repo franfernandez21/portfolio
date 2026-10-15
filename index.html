@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | FRANCISCO FERNÁNDEZ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="bg-gray-950 text-gray-300 font-sans antialiased overflow-x-hidden">
+
+    <!-- Navegacion -->
+    <header
+        class="fixed w-full top-0 z-50 bg-gray-950/80 backdrop-blur-md border-b border-white/5 transition-all duration-300"
+        id="navbar">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-white tracking-tighter">
+                Fran<span class="text-blue-500">Fernández</span>.
+            </a>
+
+            <!-- Menu de Escritorio -->
+            <nav class="hidden md:flex gap-8">
+                <a href="#home" class="text-sm font-medium hover:text-blue-400 transition-colors">Inicio</a>
+                <a href="#about" class="text-sm font-medium hover:text-blue-400 transition-colors">Sobre Mí</a>
+                <a href="#skills" class="text-sm font-medium hover:text-blue-400 transition-colors">Habilidades</a>
+                <a href="#projects" class="text-sm font-medium hover:text-blue-400 transition-colors">Proyectos</a>
+                <a href="#contact" class="text-sm font-medium hover:text-blue-400 transition-colors">Contacto</a>
+            </nav>
+
+            <!-- Boton Menu Movil -->
+            <button id="mobile-menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Menu Movil -->
+        <div id="mobile-menu"
+            class="md:hidden absolute top-full left-0 w-full bg-gray-900 border-b border-white/5 hidden flex-col py-4 px-6 shadow-xl">
+            <a href="#home" class="mobile-link py-3 text-sm font-medium border-b border-white/5">Inicio</a>
+            <a href="#about" class="mobile-link py-3 text-sm font-medium border-b border-white/5">Sobre Mí</a>
+            <a href="#skills" class="mobile-link py-3 text-sm font-medium border-b border-white/5">Habilidades</a>
+            <a href="#projects" class="mobile-link py-3 text-sm font-medium border-b border-white/5">Proyectos</a>
+            <a href="#contact" class="mobile-link py-3 text-sm font-medium">Contacto</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seccion Hero -->
+        <section id="home" class="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
+            <!-- Circulos de fondo decorativos -->
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl -z-10"></div>
+            <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-3xl -z-10"></div>
+
+            <div class="max-w-4xl mx-auto text-center fade-in">
+                <p class="text-blue-400 font-medium tracking-wide mb-4 uppercase text-sm">¡Hola! Bienvenido a mi
+                    portafolio</p>
+                <h1 class="text-4xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                    Mi nombre es Francisco<br class="md:hidden" />
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">No soy un
+                        robot</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    Soy una persona que le gusta programar tengo poca experiencia en base a trabajos IT pero soy muy
+                    dedicado, me llevo bien con la lógica de programación y algoritmia y en mis tiempos libres hago
+                    deporte.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#projects"
+                        class="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-lg transition-all shadow-lg shadow-blue-500/30">
+                        Ver mis proyectos
+                    </a>
+                    <a href="#contact"
+                        class="px-8 py-4 bg-transparent border border-gray-600 hover:border-gray-400 text-white font-medium rounded-lg transition-all">
+                        Contactarme
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion Sobre Mi -->
+        <section id="about" class="py-24 px-6 bg-gray-900 border-y border-white/5">
+            <div class="max-w-6xl mx-auto fade-in">
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="w-full md:w-1/2">
+                        <!-- Placeholder para tu foto -->
+                        <div class="aspect-square max-w-md mx-auto rounded-2xl overflow-hidden relative group">
+                            <img src="Images/FORMAL.jpg" alt="Sobre Mí"
+                                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 mask-radial-at-center mask-radial-from-50% mask-radial-to-80% ">
+                            <div class="absolute inset-0 bg-500/20 mix-blend-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <div
+                            class="inline-block px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs font-semibold tracking-wider uppercase mb-4">
+                            Conóceme</div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Sobre Mí</h2>
+                        <p class="text-gray-400 mb-6 leading-relaxed">
+                            Soy un estudiante de Licenciatura en Informatica con muchas ganas de aprender y construir.
+                            Mi
+                            enfoque principal está en la automatización y creación de interfaces
+                            interactivas.
+                        </p>
+                        <p class="text-gray-400 mb-8 leading-relaxed">
+                            Me gusta enfrentar desafíos, optimizar procesos y colaborar en proyectos que tengan
+                            un impacto real. Actualmente sigo perfeccionando mis habilidades técnicas y buscando
+                            oportunidades para aplicar mis conocimientos en el mundo real.
+                        </p>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div>
+                                <h4 class="text-white font-bold text-xl mb-1">+1</h4>
+                                <p class="text-sm text-gray-500">Año programando</p>
+                            </div>
+                            <div>
+                                <h4 class="text-white font-bold text-xl mb-1">+3</h4>
+                                <p class="text-sm text-gray-500">Proyectos realizados</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion Habilidades -->
+        <section id="skills" class="py-24 px-6">
+            <div class="max-w-6xl mx-auto text-center fade-in">
+                <div
+                    class="inline-block px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs font-semibold tracking-wider uppercase mb-4">
+                    Herramientas</div>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-12">Mis Habilidades</h2>
+
+                <div class="flex flex-wrap justify-center gap-6">
+                    <!-- Java -->
+                    <div
+                        class="flex items-center gap-3 bg-gray-800 px-6 py-4 rounded-xl border border-white/5 hover:border-blue-500/50 hover:-translate-y-1 transition-all duration-300">
+                        <img src="Images/java-brands-solid-full.svg" alt="Java" class="w-10 h-10">
+                        <span class="text-lg font-medium text-white">Java</span>
+                    </div>
+                    <!-- Excel VBA -->
+                    <div
+                        class="flex items-center gap-3 bg-gray-800 px-6 py-4 rounded-xl border border-white/5 hover:border-blue-500/50 hover:-translate-y-1 transition-all duration-300">
+                        <img src="Images/file-excel-solid-full.svg" alt="Excel" class="w-10 h-10">
+                        <span class="text-lg font-medium text-white">Excel</span>
+                    </div>
+                    <!-- HTML -->
+                    <div
+                        class="flex items-center gap-3 bg-gray-800 px-6 py-4 rounded-xl border border-white/5 hover:border-blue-500/50 hover:-translate-y-1 transition-all duration-300">
+                        <img src="Images/html5-brands-solid-full.svg" alt="HTML5" class="w-10 h-10">
+                        <span class="text-lg font-medium text-white">HTML5</span>
+                    </div>
+                    <!-- CSS -->
+                    <div
+                        class="flex items-center gap-3 bg-gray-800 px-6 py-4 rounded-xl border border-white/5 hover:border-blue-500/50 hover:-translate-y-1 transition-all duration-300">
+                        <img src="Images/css3-alt-brands-solid-full.svg" alt="CSS" class="w-10 h-10">
+                        <span class="text-lg font-medium text-white">CSS3</span>
+                    </div>
+                    <!-- JavaScript -->
+                    <div
+                        class="flex items-center gap-3 bg-gray-800 px-6 py-4 rounded-xl border border-white/5 hover:border-blue-500/50 hover:-translate-y-1 transition-all duration-300">
+                        <img src="Images/icons8-google-analytics.svg" alt="PowerBi" class="w-8 h-8">
+                        <span class="text-lg font-medium text-white">Power Bi</span>
+                    </div>
+                    <!-- SQL 
+                    <div
+                        class="flex items-center gap-3 bg-gray-800 px-6 py-4 rounded-xl border border-white/5 hover:border-blue-500/50 hover:-translate-y-1 transition-all duration-300">
+                        <i class="fas fa-database text-3xl text-blue-400"></i>
+                        <span class="text-lg font-medium text-white">SQL</span>
+                    </div>-->
+                </div>
+            </div>
+        </section>
+
+        <!-- Seccion Proyectos -->
+        <section id="projects" class="py-24 px-6 bg-gray-900 border-y border-white/5">
+            <div class="max-w-6xl mx-auto fade-in">
+                <div class="text-center mb-16">
+                    <div
+                        class="inline-block px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs font-semibold tracking-wider uppercase mb-4">
+                        Portafolio</div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Proyectos Destacados</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Proyecto 1 -->
+                    <div
+                        class="bg-gray-950 rounded-2xl overflow-hidden border border-white/5 hover:border-blue-500/30 group transition-all duration-300">
+                        <div class="h-48 overflow-hidden">
+                            <img src="Images/Proyecto VBA.jpg" alt="Proyecto 1"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                                Sistema de Gestión para GYM</h3>
+                            <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                                Aplicación robusta desarrollada en Excel VBA para administrar la información de los
+                                clientes del gimnasio de forma organizada.<br>
+                                Control de vencimientos: Utilice formulas lógicas y alertas visuales para llevar el
+                                control de las cuotas y los pagos.<br>Generador de recibos.<br>Y más
+                            </p>
+                            <div class="flex gap-2 mt-auto">
+                                <span class="px-2 py-1 bg-gray-800 text-xs text-gray-300 rounded">Excel VBA</span>
+                                <span class="px-2 py-1 bg-gray-800 text-xs text-gray-300 rounded">Gestión</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 2 -->
+                    <div
+                        class="bg-gray-950 rounded-2xl overflow-hidden border border-white/5 hover:border-blue-500/30 group transition-all duration-300 flex flex-col h-full">
+                        <div class="h-48 overflow-hidden">
+                            <img src="Images/Proyecto Padel.jpg" alt="Proyecto 1"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6 flex flex-col flex-1">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                                Sistema de Gestión automático de torneos semanales</h3>
+                            <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                                Planilla inteligente diseñada para la gestión rápida y en vivo de torneos de formato
+                                corto o "semanales".
+                            </p>
+                            <div class="flex gap-2 mt-auto">
+                                <span class="px-2 py-1 bg-gray-800 text-xs text-gray-300 rounded">Excel VBA</span>
+                                <span class="px-2 py-1 bg-gray-800 text-xs text-gray-300 rounded">Gestión</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto 3 -->
+                    <div
+                        class="bg-gray-950 rounded-2xl overflow-hidden border border-white/5 hover:border-blue-500/30 group transition-all duration-300">
+                        <div class="h-48 overflow-hidden">
+                            <img src="Images/Proyecto Menu.jpg" alt="Proyecto 2"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                                Menu para restaurante Local</h3>
+                            <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                                Desarrollo Frontend "VANILLA" estructurado con HTML semántico, diseño responsivo con CSS
+                                puro y lógica de interactividad mediante JavaScript. Creado desde cero sin frameworks,
+                                plantillas prearmadas ni IA, demostrando un dominio sólido del código base.
+                            </p>
+                            <div class="mt-auto flex flex-col gap-4">
+                                <div class="flex gap-2 flex-wrap">
+                                    <span class="px-2 py-1 bg-gray-800 text-xs text-gray-300 rounded">HTML</span>
+                                    <span class="px-2 py-1 bg-gray-800 text-xs text-gray-300 rounded">CSS</span>
+                                    <span class="px-2 py-1 bg-gray-800 text-xs text-gray-300 rounded">JavaScript</span>
+                                </div>
+
+                                <!-- boton de github -->
+                                <div class="flex gap-2 mt-2 w-full">
+                                    <!-- Botón Ver Código -->
+                                    <a class="flex-1" title="Dirigite a ver el código"
+                                        href="https://github.com/franfernandez21/franfernandez21.github.io"
+                                        target="_blank">
+                                        <span
+                                            class="flex items-center justify-center gap-2 w-full px-3 py-1.5 bg-gray-800 text-xs text-gray-300 rounded hover:bg-gray-600 transition-colors cursor-pointer">
+                                            Ver código
+                                            <img src="Images/icongit.png" alt="Github"
+                                                style="width: 14px; height: 14px; object-fit: contain;">
+                                        </span>
+                                    </a>
+
+                                    <!-- Botón Ir al menú -->
+                                    <a class="flex-1" title="Ir al menú" href="https://franfernandez21.github.io/"
+                                        target="_blank">
+                                        <span
+                                            class="flex items-center justify-center gap-2 w-full px-3 py-1.5 bg-gray-800 text-xs text-gray-300 rounded hover:bg-gray-600 transition-colors cursor-pointer">
+                                            Ir al menú
+                                            <img src="Images/menuicon.svg" alt="Menú"
+                                                style="width: 14px; height: 14px; object-fit: contain;">
+                                        </span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Proyecto Futuro
+                    <div
+                        class="bg-gray-950 rounded-2xl overflow-hidden border border-white/5 hover:border-blue-500/30 group transition-all duration-300">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Web+Apps" alt="Proyecto 3"
+                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                        </div>
+
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                                Aplicaciones Web Interactivas</h3>
+                            <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                                Colección de mini-aplicaciones dinámicas creadas utilizando HTML semántico, CSS
+                                responsivo y Vanilla JavaScript.
+                            </p>
+                            <div class="flex gap-2 mt-auto">
+                                <span class="px-2 py-1 bg-gray-800 text-xs text-gray-300 rounded">HTML/CSS</span>
+                                <span class="px-2 py-1 bg-gray-800 text-xs text-gray-300 rounded">JavaScript</span>
+                            </div>
+                        </div>
+                            -->
+                </div>
+
+            </div>
+            </div>
+        </section>
+
+        <!-- Seccion Contacto -->
+        <section id="contact" class="py-24 px-6 relative">
+            <div class="max-w-4xl mx-auto fade-in">
+                <div class="text-center mb-12">
+                    <div
+                        class="inline-block px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs font-semibold tracking-wider uppercase mb-4">
+                        Trabajemos juntos</div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white">Contáctame</h2>
+                </div>
+
+                <div class="bg-gray-900 p-8 md:p-12 rounded-2xl border border-white/5 shadow-2xl">
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-400 mb-2">Nombre</label>
+                                <input type="text" id="name" required
+                                    class="w-full bg-gray-950 border border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-400 mb-2">Correo
+                                    Electrónico</label>
+                                <input type="email" id="email" required
+                                    class="w-full bg-gray-950 border border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-400 mb-2">Mensaje</label>
+                            <textarea id="message" rows="5" required
+                                class="w-full bg-gray-950 border border-gray-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors resize-none"></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full py-4 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg transition-all flex justify-center items-center gap-2">
+                            <span>Enviar Mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+
+                        <!-- Mensaje de exito oculto por defecto -->
+                        <div id="form-success"
+                            class="hidden mt-4 p-4 bg-green-500/10 border border-green-500/20 rounded-lg text-green-400 text-center">
+                            Gracias por tu mensaje! Me pondre en contacto contigo pronto.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-white/5 py-8 text-center">
+        <div class="flex justify-center gap-6 mb-6">
+            <a href="#" class="text-gray-500 hover:text-white transition-colors text-xl"><i
+                    class="fab fa-github"></i></a>
+            <a href="#" class="text-gray-500 hover:text-blue-400 transition-colors text-xl"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-gray-500 hover:text-blue-400 transition-colors text-xl"><i
+                    class="fas fa-envelope"></i></a>
+        </div>
+        <p class="text-gray-600 text-sm">
+            &copy; 2026 Desarrollado por Mi con ayuda de la IA. Todos los derechos reservados.
+        </p>
+
+        <script src="/scripts.js"></script>
+    </footer>
