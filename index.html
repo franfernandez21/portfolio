@@ -57,15 +57,19 @@
             <div class="max-w-4xl mx-auto text-center fade-in">
                 <p class="text-blue-400 font-medium tracking-wide mb-4 uppercase text-sm">¡Hola! Bienvenido a mi
                     portafolio</p>
-                <h1 class="text-4xl md:text-7xl font-bold text-white mb-6 leading-tight">
-                    Mi nombre es Francisco<br class="md:hidden" />
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">No soy un
-                        robot</span>
+                <h1 class="font-bold text-white mb-6 leading-tight">
+                    <span class="text-4xl md:text-7xl block mb-2 md:mb-4">Mi nombre es Francisco</span>
+
+                    <!-- Nueva frase en un tamaño más mediano (text-xl en celulares, text-3xl en PC) -->
+                    <span
+                        class="text-xl md:text-3xl block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 leading-snug">
+                        Transformando problemas cotidianos y repetitivos en soluciones con código
+                    </span>
                 </h1>
                 <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
-                    Soy una persona que le gusta programar tengo poca experiencia en base a trabajos IT pero soy muy
-                    dedicado, me llevo bien con la lógica de programación y algoritmia y en mis tiempos libres hago
-                    deporte.
+                    Me apasiona usar la lógica para simplificar lo complicado. Disfruto el proceso de entender una
+                    necesidad real y construir una herramienta que la resuelva, buscando siempre que la tecnología
+                    trabaje a favor de las personas, y no al revés.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
                     <a href="#projects"
@@ -97,16 +101,16 @@
                             class="inline-block px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs font-semibold tracking-wider uppercase mb-4">
                             Conóceme</div>
                         <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">Sobre Mí</h2>
-                        <p class="text-gray-400 mb-6 leading-relaxed">
-                            Soy un estudiante de Licenciatura en Informatica con muchas ganas de aprender y construir.
-                            Mi
-                            enfoque principal está en la automatización y creación de interfaces
-                            interactivas.
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            Soy estudiante de la Licenciatura en Informática en la UNSAdA, con el objetivo de lograr que
+                            el código backend y el diseño visual trabajen en perfecta sintonía. Mi día a día se divide
+                            en dos grandes áreas: la automatización robusta de datos y el desarrollo de interfaces web
+                            dinámicas en código nativo.
                         </p>
-                        <p class="text-gray-400 mb-8 leading-relaxed">
-                            Me gusta enfrentar desafíos, optimizar procesos y colaborar en proyectos que tengan
-                            un impacto real. Actualmente sigo perfeccionando mis habilidades técnicas y buscando
-                            oportunidades para aplicar mis conocimientos en el mundo real.
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            Hoy estoy enfocado en dar el siguiente gran paso: busco mi primera oportunidad formal en el
+                            sector tecnológico para transformar esta dedicación y facilidad de aprendizaje en resultados
+                            concretos para una empresa.
                         </p>
                         <div class="grid grid-cols-2 gap-6">
                             <div>
@@ -172,140 +176,229 @@
             </div>
         </section>
 
-        <!-- Seccion Proyectos -->
-        <section id="projects" class="py-24 px-6 bg-gray-900 border-y border-white/5">
-            <div class="max-w-6xl mx-auto fade-in">
-                <div class="text-center mb-16">
+        <!-- Seccion Proyectos (Carrusel mas Compacto) -->
+        <section id="projects"
+            class="py-12 md:py-16 px-6 bg-gray-900 border-y border-white/5 relative min-h-screen flex flex-col justify-center">
+            <div class="max-w-6xl mx-auto w-full fade-in">
+
+                <!-- Encabezado -->
+                <div class="text-center mb-6">
                     <div
-                        class="inline-block px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs font-semibold tracking-wider uppercase mb-4">
-                        Portafolio</div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-white">Proyectos Destacados</h2>
+                        class="inline-block px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs font-semibold tracking-wider uppercase mb-3">
+                        Portafolio
+                    </div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-white">Proyectos Destacados</h2>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Contenedor Principal del Carrusel (Ancho reducido) -->
+                <div class="relative max-w-3xl mx-auto">
 
-                    <!-- Proyecto 1 -->
+                    <!-- FLECHAS SUPERPUESTAS -->
+                    <button id="prev-btn"
+                        class="absolute top-[35%] -translate-y-1/2 -left-5 md:-left-6 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-blue-600 hover:bg-blue-500 text-white rounded-full shadow-[0_0_15px_rgba(59,130,246,0.6)] transition-all hover:scale-110 focus:outline-none z-50 cursor-pointer">
+                        <svg class="w-5 h-5 pr-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <button id="next-btn"
+                        class="absolute top-[35%] -translate-y-1/2 -right-5 md:-right-6 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center bg-blue-600 hover:bg-blue-500 text-white rounded-full shadow-[0_0_15px_rgba(59,130,246,0.6)] transition-all hover:scale-110 focus:outline-none z-50 cursor-pointer">
+                        <svg class="w-5 h-5 pl-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <!-- LA MEGA TARJETA -->
                     <div
-                        class="bg-gray-950 rounded-2xl overflow-hidden border border-white/5 hover:border-blue-500/30 group transition-all duration-300">
-                        <div class="h-48 overflow-hidden">
-                            <img src="Images/Proyecto VBA.jpg" alt="Proyecto 1"
-                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
-                                Sistema de Gestión para GYM</h3>
-                            <p class="text-gray-400 text-sm mb-4 leading-relaxed">
-                                Aplicación robusta desarrollada en Excel VBA para administrar la información de los
-                                clientes del gimnasio de forma organizada.<br>
-                                Control de vencimientos: Utilice formulas lógicas y alertas visuales para llevar el
-                                control de las cuotas y los pagos.<br>Generador de recibos.<br>Y más
-                            </p>
-                            <div class="flex gap-2 mt-auto">
-                                <span class="px-2 py-1 bg-gray-800 text-xs text-gray-300 rounded">Excel VBA</span>
-                                <span class="px-2 py-1 bg-gray-800 text-xs text-gray-300 rounded">Gestión</span>
+                        class="overflow-hidden rounded-2xl border border-white/10 bg-gray-950 shadow-2xl relative z-10">
+
+                        <div id="carousel-track" class="flex transition-transform duration-500 ease-in-out w-full">
+
+                            <!-- PROYECTO 1 -->
+                            <div
+                                class="relative flex-none w-full flex flex-col hover:border-blue-500/30 group transition-all duration-300">
+                                <div
+                                    class="h-48 md:h-[200px] w-full overflow-hidden bg-[#1e293b] flex items-center justify-center">
+                                    <img src="Images/Proyecto VBA.jpg" alt="Proyecto 1"
+                                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                </div>
+
+                                <div class="p-5 md:p-6 flex flex-col flex-grow">
+                                    <div class="flex flex-wrap gap-2 mb-2">
+                                        <span
+                                            class="px-2 py-0.5 bg-blue-500/20 text-[10px] uppercase text-blue-400 rounded-full border border-blue-500/30 font-bold">Excel
+                                            VBA MACROS
+                                        </span>
+                                    </div>
+
+                                    <h3 class="text-lg md:text-xl font-bold text-white mb-2">Sistema de Gestión para GYM
+                                    </h3>
+
+                                    <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                                        <span class="text-white font-semibold">El desafío:</span> Desorganización y
+                                        pérdida de tiempo al llevar el seguimiento manual de los clientes y sus cuotas
+                                        vencidas.<br>
+                                        <span class="text-white font-semibold">La solución:</span> Desarrollé un sistema
+                                        en Excel VBA que centraliza la base de datos y utiliza alertas visuales
+                                        automatizadas para controlar los vencimientos en tiempo real. Adicionalmente,
+                                        integré un generador de recibos para profesionalizar y formalizar el proceso de
+                                        cobro.
+                                    </p>
+
+                                    <div class="flex flex-wrap gap-3 mt-auto">
+                                        <a href="https://github.com/franfernandez21/gym-vba-sistem" target="_blank"
+                                            class="flex items-center gap-2 px-4 py-1.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg transition-all shadow-lg shadow-blue-500/30 text-sm">
+                                            <img src="Images/icongit.png" alt="" class="w-5 h-5">
+                                            Ver Código
+                                        </a>
+                                        <a href="#" target="_blank"
+                                            class="flex items-center gap-2 px-4 py-1.5 bg-transparent border border-gray-600 hover:border-blue-400 text-gray-300 hover:text-blue-400 font-semibold rounded-lg transition-all text-sm">
+                                            <img src="Images/menuicon.svg" alt="" class="w-5 h-5">
+                                            Demo / Video
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <!-- Proyecto 2 -->
-                    <div
-                        class="bg-gray-950 rounded-2xl overflow-hidden border border-white/5 hover:border-blue-500/30 group transition-all duration-300 flex flex-col h-full">
-                        <div class="h-48 overflow-hidden">
-                            <img src="Images/Proyecto Padel.jpg" alt="Proyecto 1"
-                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        </div>
-                        <div class="p-6 flex flex-col flex-1">
-                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
-                                Sistema de Gestión automático de torneos semanales</h3>
-                            <p class="text-gray-400 text-sm mb-4 leading-relaxed">
-                                Planilla inteligente diseñada para la gestión rápida y en vivo de torneos de formato
-                                corto o "semanales".
-                            </p>
-                            <div class="flex gap-2 mt-auto">
-                                <span class="px-2 py-1 bg-gray-800 text-xs text-gray-300 rounded">Excel VBA</span>
-                                <span class="px-2 py-1 bg-gray-800 text-xs text-gray-300 rounded">Gestión</span>
+                            <!-- PROYECTO 2 -->
+                            <div
+                                class="relative flex-none w-full flex flex-col hover:border-blue-500/30 group transition-all duration-300">
+                                <div
+                                    class="h-48 md:h-[200px] w-full overflow-hidden bg-[#1e293b] flex items-center justify-center">
+                                    <img src="Images/Proyecto Padel.jpg" alt="Proyecto 2"
+                                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                </div>
+                                <div class="p-5 md:p-6 flex flex-col h-full">
+                                    <div class="flex flex-wrap gap-2 mb-2">
+                                        <span
+                                            class="px-2 py-0.5 bg-blue-500/20 text-[10px] uppercase text-blue-400 rounded-full border border-blue-500/30 font-bold">Excel
+                                            VBA MACROS</span>
+                                    </div>
+
+                                    <h3 class="text-lg md:text-xl font-bold text-white mb-2">Sistema de Gestión
+                                        automático de torneos semanales</h3>
+                                    <p class="text-gray-400 text-xs md:text-sm mb-4 leading-relaxed">
+                                        <span class="text-white font-semibold">El desafío:</span> El desafío: La
+                                        organización de torneos americanos de pádel requería horas de trabajo manual y
+                                        planificación. Armar un fixture exacto para 8 jugadores garantizando que todos
+                                        jugaran contra todos sin repetir parejas, y luego calcular manualmente los
+                                        puntos, diferencias de games y posiciones tras cada partido, era un proceso
+                                        lento y propenso a errores humanos.<br>
+                                        <span class="text-white font-semibold mt-1 inline-block">La solución:</span> La
+                                        solución: Desarrollé un sistema en Excel VBA que automatiza todo el ciclo del
+                                        torneo. Con solo ingresar los 8 nombres, un algoritmo genera las 7 fechas y sus
+                                        cruces al instante. Tras finalizar el partido, el sistema procesa los
+                                        resultados, calcula la diferencia de games y actualiza la tabla de posiciones en
+                                        tiempo real, reduciendo un trabajo de días a tan solo segundos.
+                                    </p>
+
+                                    <div class="flex flex-wrap gap-3 mt-auto">
+                                        <a href="https://github.com/franfernandez21/Padel-system-semanal"
+                                            target="_blank"
+                                            class="flex items-center gap-2 px-4 py-1.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg transition-all shadow-lg shadow-blue-500/30 text-sm">
+                                            <img src="Images/icongit.png" alt="" class="w-5 h-5">
+                                            Ver Código
+                                        </a>
+                                        <a href="#" target="_blank"
+                                            class="flex items-center gap-2 px-4 py-1.5 bg-transparent border border-gray-600 hover:border-blue-400 text-gray-300 hover:text-blue-400 font-semibold rounded-lg transition-all text-sm">
+                                            <img src="Images/menuicon.svg" alt="" class="w-5 h-5">
+                                            Demo / Video
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <!-- Proyecto 3 -->
-                    <div
-                        class="bg-gray-950 rounded-2xl overflow-hidden border border-white/5 hover:border-blue-500/30 group transition-all duration-300">
-                        <div class="h-48 overflow-hidden">
-                            <img src="Images/Proyecto Menu.jpg" alt="Proyecto 2"
-                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        </div>
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
-                                Menu para restaurante Local</h3>
-                            <p class="text-gray-400 text-sm mb-4 leading-relaxed">
-                                Desarrollo Frontend "VANILLA" estructurado con HTML semántico, diseño responsivo con CSS
-                                puro y lógica de interactividad mediante JavaScript. Creado desde cero sin frameworks,
-                                plantillas prearmadas ni IA, demostrando un dominio sólido del código base.
-                            </p>
-                            <div class="mt-auto flex flex-col gap-4">
-                                <div class="flex gap-2 flex-wrap">
-                                    <span class="px-2 py-1 bg-gray-800 text-xs text-gray-300 rounded">HTML</span>
-                                    <span class="px-2 py-1 bg-gray-800 text-xs text-gray-300 rounded">CSS</span>
+                            <!-- PROYECTO 3 -->
+                            <div
+                                class="relative flex-none w-full flex flex-col hover:border-blue-500/30 group transition-all duration-300">
+                                <div
+                                    class="h-48 md:h-[200px] w-full overflow-hidden bg-[#1e293b] flex items-center justify-center">
+                                    <img src="Images/Proyecto Menu.jpg" alt="Proyecto 2"
+                                        class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                                </div>
+                                <div class="p-5 md:p-6 flex flex-col h-full">
+                                    <div class="flex flex-wrap gap-2 mb-2">
+                                        <span
+                                            class="px-2 py-0.5 bg-blue-500/20 text-[10px] uppercase text-blue-400 rounded-full border border-blue-500/30 font-bold">HTML5</span>
+                                        <span
+                                            class="px-2 py-0.5 bg-blue-500/20 text-[10px] uppercase text-blue-400 rounded-full border border-blue-500/30 font-bold">CSS
+                                            CSS</span>
+                                        <span
+                                            class="px-2 py-0.5 bg-blue-500/20 text-[10px] uppercase text-blue-400 rounded-full border border-blue-500/30 font-bold">JavaScript</span>
+                                    </div>
+
+                                    <h3 class="text-lg md:text-xl font-bold text-white mb-2">Carta digital para
+                                        Restaurante Local
+                                    </h3>
+                                    <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                                        <span class="text-white font-semibold">El desafío:</span>La plataforma de carta
+                                        QR anterior dependía de un servicio de terceros lento y propenso a errores
+                                        (bugs). Consumía demasiados datos móviles y demoraba en cargar, frustrando la
+                                        experiencia de los clientes al momento de realizar su pedido en el local.<br>
+                                        <span class="text-white font-semibold mt-1 inline-block">La solución:</span>
+                                        Diseñé y programé una interfaz 100% responsiva desde cero. Al utilizar
+                                        exclusivamente código nativo (HTML, CSS y Vanilla JS) sin depender de plantillas
+                                        ni frameworks pesados, logré reducir drásticamente los tiempos de carga,
+                                        garantizando una navegación fluida, estable e instantánea en cualquier
+                                        dispositivo móvil.
+                                    </p>
+
+                                    <div class="flex flex-wrap gap-3 mt-auto">
+                                        <a href="https://github.com/franfernandez21/franfernandez21.github.io"
+                                            target="_blank"
+                                            class="flex items-center gap-2 px-4 py-1.5 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-lg transition-all shadow-lg shadow-blue-500/30 text-sm">
+                                            <img src="Images/icongit.png" alt="" class="w-5 h-5">
+                                            Ver Código
+                                        </a>
+                                        <a href="https://franfernandez21.github.io/" target="_blank"
+                                            class="flex items-center gap-2 px-4 py-1.5 bg-transparent border border-gray-600 hover:border-blue-400 text-gray-300 hover:text-blue-400 font-semibold rounded-lg transition-all text-sm">
+                                            <img src="Images/menuicon.svg" alt="" class="w-5 h-5">
+                                            Visitar Web
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Proyecto Futuro
+                        <div
+                            class="bg-gray-950 rounded-2xl overflow-hidden border border-white/5 hover:border-blue-500/30 group transition-all duration-300">
+                            <div class="h-48 overflow-hidden">
+                                <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Web+Apps" alt="Proyecto 3"
+                                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                            </div>
+                    
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                                    Aplicaciones Web Interactivas</h3>
+                                <p class="text-gray-400 text-sm mb-4 leading-relaxed">
+                                    Colección de mini-aplicaciones dinámicas creadas utilizando HTML semántico, CSS
+                                    responsivo y Vanilla JavaScript.
+                                </p>
+                                <div class="flex gap-2 mt-auto">
+                                    <span class="px-2 py-1 bg-gray-800 text-xs text-gray-300 rounded">HTML/CSS</span>
                                     <span class="px-2 py-1 bg-gray-800 text-xs text-gray-300 rounded">JavaScript</span>
                                 </div>
-
-                                <!-- boton de github -->
-                                <div class="flex gap-2 mt-2 w-full">
-                                    <!-- Botón Ver Código -->
-                                    <a class="flex-1" title="Dirigite a ver el código"
-                                        href="https://github.com/franfernandez21/franfernandez21.github.io"
-                                        target="_blank">
-                                        <span
-                                            class="flex items-center justify-center gap-2 w-full px-3 py-1.5 bg-gray-800 text-xs text-gray-300 rounded hover:bg-gray-600 transition-colors cursor-pointer">
-                                            Ver código
-                                            <img src="Images/icongit.png" alt="Github"
-                                                style="width: 14px; height: 14px; object-fit: contain;">
-                                        </span>
-                                    </a>
-
-                                    <!-- Botón Ir al menú -->
-                                    <a class="flex-1" title="Ir al menú" href="https://franfernandez21.github.io/"
-                                        target="_blank">
-                                        <span
-                                            class="flex items-center justify-center gap-2 w-full px-3 py-1.5 bg-gray-800 text-xs text-gray-300 rounded hover:bg-gray-600 transition-colors cursor-pointer">
-                                            Ir al menú
-                                            <img src="Images/menuicon.svg" alt="Menú"
-                                                style="width: 14px; height: 14px; object-fit: contain;">
-                                        </span>
-                                    </a>
-                                </div>
-
                             </div>
+                                -->
+
                         </div>
                     </div>
 
-                    <!-- Proyecto Futuro
-                    <div
-                        class="bg-gray-950 rounded-2xl overflow-hidden border border-white/5 hover:border-blue-500/30 group transition-all duration-300">
-                        <div class="h-48 overflow-hidden">
-                            <img src="https://placehold.co/600x400/1e293b/38bdf8?text=Web+Apps" alt="Proyecto 3"
-                                class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
-                        </div>
+                    <!-- PUNTOS INDICADORES -->
+                    <div class="flex justify-center gap-3 mt-6" id="carousel-indicators">
+                        <button class="w-2 h-2 rounded-full bg-blue-500 transition-all hover:scale-125 cursor-pointer"
+                            data-slide="0"></button>
+                        <button class="w-2 h-2 rounded-full bg-gray-400 transition-all hover:scale-125 cursor-pointer"
+                            data-slide="1"></button>
+                        <button class="w-2 h-2 rounded-full bg-gray-400 transition-all hover:scale-125 cursor-pointer"
+                            data-slide="2"></button>
+                    </div>
 
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
-                                Aplicaciones Web Interactivas</h3>
-                            <p class="text-gray-400 text-sm mb-4 leading-relaxed">
-                                Colección de mini-aplicaciones dinámicas creadas utilizando HTML semántico, CSS
-                                responsivo y Vanilla JavaScript.
-                            </p>
-                            <div class="flex gap-2 mt-auto">
-                                <span class="px-2 py-1 bg-gray-800 text-xs text-gray-300 rounded">HTML/CSS</span>
-                                <span class="px-2 py-1 bg-gray-800 text-xs text-gray-300 rounded">JavaScript</span>
-                            </div>
-                        </div>
-                            -->
                 </div>
-
-            </div>
             </div>
         </section>
+
 
         <!-- Seccion Contacto -->
         <section id="contact" class="py-24 px-6 relative">
@@ -313,7 +406,8 @@
                 <div class="text-center mb-12">
                     <div
                         class="inline-block px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-xs font-semibold tracking-wider uppercase mb-4">
-                        Trabajemos juntos</div>
+                        Trabajemos juntos
+                    </div>
                     <h2 class="text-3xl md:text-4xl font-bold text-white">Contáctame</h2>
                 </div>
 
@@ -343,7 +437,6 @@
                             <i class="fas fa-paper-plane"></i>
                         </button>
 
-                        <!-- Mensaje de exito oculto por defecto -->
                         <div id="form-success"
                             class="hidden mt-4 p-4 bg-green-500/10 border border-green-500/20 rounded-lg text-green-400 text-center">
                             Gracias por tu mensaje! Me pondre en contacto contigo pronto.
@@ -367,6 +460,8 @@
         <p class="text-gray-600 text-sm">
             &copy; 2026 Desarrollado por Mi con ayuda de la IA. Todos los derechos reservados.
         </p>
-
-        <script src="/scripts.js"></script>
     </footer>
+    <script src="./scripts.js?v=2"></script>
+</body>
+
+</html>
