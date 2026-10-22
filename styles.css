@@ -1,6 +1,20 @@
         @import "tailwindcss";
 
         /* Animaciones personalizadas suaves */
+        @theme {
+            --animate-infinite-scroll: infinite-scroll 35s linear infinite;
+
+            @keyframes infinite-scroll {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-100%);
+                }
+            }
+        }
+
         .fade-in {
             opacity: 0;
             transform: translateY(20px);
